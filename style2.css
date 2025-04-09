@@ -1,0 +1,25 @@
+body{
+    background-color: #e0e0e0;
+}
+
+li{
+    font-weight: bold;
+}
+ol{
+    background-color: #e0e0e0;
+}
+
+.btn{
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 50px
+}
+
+#contador{
+    font-size: 50px;
+    font-weight: bold;
+    color: red;
+}
