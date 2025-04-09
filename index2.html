@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Revisão de JavaScript</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 50px;
+      background-color: #f0f0f0;
+    }
+    h1 {
+      color: #333;
+    }
+    button {
+      margin: 10px;
+      padding: 15px 25px;
+      font-size: 16px;
+      cursor: pointer;
+      border: none;
+      border-radius: 5px;
+      background-color: steelblue;
+      color: white;
+    }
+    button:hover {
+      background-color: darkblue;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Revisão de JavaScript</h1>
+  <p>Clique nos botões abaixo para ver diferentes interações:</p>
+
+  <button onclick="mostrarMensagem()">Mensagem Simples</button>
+  <button onclick="mostrarNome()">Mostrar Nome</button>
+  <button onclick="mostrarSoma()">Soma de Números</button>
+  <button onclick="verificarIdade()">Verificar Idade</button>
+  <button onclick="saudacaoHorario()">Saudação pelo Horário</button>
+
+  <script>
+    function mostrarMensagem() {
+      alert("Olá! Você clicou no botão.");
+    }
+
+    function mostrarNome() {
+      let nome = prompt("Qual é o seu nome?");
+      alert("Seja bem-vindo(a), " + nome + "!");
+    }
+
+    function mostrarSoma() {
+      let n1 = Number(prompt("Digite o primeiro número:"));
+      let n2 = Number(prompt("Digite o segundo número:"));
+      alert("A soma é: " + (n1 + n2));
+    }
+
+    function verificarIdade() {
+      let idade = Number(prompt("Qual a sua idade?"));
+      if (idade >= 18) {
+        alert("Você é maior de idade.");
+      } else {
+        alert("Você é menor de idade.");
+      }
+    }
+
+    function saudacaoHorario() {
+      let hora = new Date().getHours();
+      if (hora < 12) {
+        alert("Bom dia!");
+      } else if (hora < 18) {
+        alert("Boa tarde!");
+      } else {
+        alert("Boa noite!");
+      }
+    }
+  </script>
+
+</body>
+</html>
